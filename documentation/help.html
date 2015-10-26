@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>unicornclouds documentation</title>
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="wrapper">
+
+  <div id="sidebar-wrapper">
+    <div class="sideArrow"><a id="menu-toggle" href="#" class="btn btn-default"><i class="fa fa-chevron-right"></i></a></div>
+    <div class="sidebar-brand"> <a href="#"><img src="images/logo.jpg" width="147" height="87" alt=""></a> </div>
+    <ul class="sidebar-nav">
+      <li><span>Contents.</span></li>
+      <li><a href="#one" class="active">1. Background settings</a></li>
+      <li><a href="#two">2. Skill diagram settings</a></li>
+      <li><a href="#tres">3. Latest build settings</a></li>
+      <li><a href="#four">4. Contact section</a></li>
+      <li><a href="#five">5. JavaScript files</a></li>
+      <li><a href="#six">6. Sources and credits</a></li>
+    </ul>
+  </div>
+  <!-- Page content -->
+  <div id="page-content-wrapper">
+    <div class="content-header">
+      <h1>unicornclouds documentation</h1>
+    </div>
+
+    <div class="page-content inset">
+      <div class="row">
+        <h2 id="one">1. Background Settings</h2>
+        <p>List photos / locations on where to change visual elements </p>
+        <p><strong>Section 1</strong></p>
+        <p>1. Lorem ipsum.</p>
+        <p>2. Vestibulum ipsum duis condimentum, bibendum cras varius curabitur suspendisse malesuada, eget etiam integer ornare vestibulum, aenean vivamus consequat fringilla, purus amet asperiores tortor cras.</p>
+        <p>3. Purus litora, donec dui eros molestie, feugiat odio proin ut sed, praesent a congue eros, sociosqu nunc suspendisse proin. Fermentum sit, nulla ante. Velit mauris penatibus ante. .</p>
+        <p class="bottomLine"></p>
+        <h2 id="two">2. Skill diagram</h2>
+        <p>Vestibulum est, tempus ante ac donec recusandae to adjust the Skill chart setings.</p>
+        <p><span> &lt;div class=&quot; Vestibulum est, tempus ante ac donec recusandae.  &quot;&gt;</span></p>
+        <p class="bottomLine"></p>
+        <h2 id="tres">3. Latest build settings</h2>
+        <p>Eget dui in curabitur venenatis, et in pulvinar nam donec justo, nullam velit feugiat nunc nonummy.</p>
+        <p class="bottomLine">&nbsp;</p>		
+        <h2 id="four">4. Contact section</h2>
+        <p>Sed maecenas lectus. Pellentesque mauris feugiat donec pellentesque. </p>
+        <p class="bottomLine">&nbsp;</p>
+        <h2 id="five">5. Related JavaScript files</h2>
+        <p>
+        <ol>
+          <li><strong>js/jquery.js</strong> - <a href="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js">Jquery</a> is a JavaScript Library that simplifies HTML document traversing, event   handling, animating, and Ajax interactions for rapid web development.   The template is using the library hosted by google, for faster loading   of the webpage.</li>
+          <li><strong>js/bootstrap.min.js</strong> - For simple transition effects, include transition.js once alongside the other JS files. If you're using the compiled (or minified) <a href="http://getbootstrap.com/javascript/#transitions" target="_blank">bootstrap.js</a>, there is no need to include this—it's already there.</li>
+          <li><strong>js/init</strong> - This script handles the visual parameters for the skills diagram (raphael).</li>
+          <li><strong>js/raphael.js</strong> -  JS library for vector graphics.</li>
+          <li><strong>js/controllers.js</strong> -  Angular controller that gets data on repos from the github API.</li>
+		  <li><strong>js/page-functions.js</strong> -  Handles collapsing/static nav bar, responsive menu toggles, grabs current year for footer copyright.</li>
+        </ol>
+        <p class="bottomLine">&nbsp;</p>
+        <h2 id="six">6. Sources and Credits</h2>
+        <p>
+        <ol>
+          <li><strong>JQuery </strong> - http://jquery.com/</li>
+          <li><strong>Raphael</strong> - http://raphaeljs.com/</li>
+          <li><strong>iconic fonts</strong> - http://fontawesome.io/</li>
+		  <li><strong>Bootstrap</strong> - #</li>
+		  <li><strong>Bootswatch</strong> - #</li>
+		  <li><strong>Animate CSS</strong> - #</li>
+		  <li><strong>Unsplash (banner)</strong> - https://images.unsplash.com/photo-1444090695923-48e08781a76a?q=80&fm=jpg&s=b13e167741e30e229f636a36e0ad45d5</li>
+        </ol>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JavaScript -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<!-- menu toggle -->
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+<!--  page scroll  -->
+<script>
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				$('html,body').animate({
+				  scrollTop: target.offset().top -80
+				}, 1000);
+				$('a[href*=#]:not([href=#])').removeClass('active');
+				$(this).addClass('active');
+				return false;
+			  }
+			}
+		  });
+		});
+    </script>
+</body>
+</html>
