@@ -1,269 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>unicornclouds</title>
+  <title>unicornclouds</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-	<link href="css/bootswatch.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootswatch.css" rel="stylesheet">
 
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
-    <link href="css/animate.css" rel="stylesheet">	
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-route.min.js"></script>
-	<script src="js/controllers.js"></script>
+
+  <link href="css/animate.css" rel="stylesheet">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-route.min.js"></script>
+  <script src="js/controllers.js"></script>
 </head>
 
 <body ng-app="buildsApp">
- 
-<!--- Nav bar  ---------------------------------------------------------->  
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!--- Nav bar  ---------------------------------------------------------->
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-				<!-- Left side branding -->
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <span id="brand">unicorn</span>clouds<i class="fa fa-cloud"></i>
-                </a>
-            </div>
-      <!-- Start right side links -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="hidden"> <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#builds">Latest builds</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#certs">Certs</a>
-                    </li>					
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+          <!-- Left side branding -->
+          <a class="navbar-brand page-scroll" href="#page-top">
+            <span id="brand">unicorn</span>clouds<i class="fa fa-cloud"></i>
+          </a>
         </div>
-    </nav> <!-- End navbar of doom -->
+        <!-- Start right side links -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li class="hidden">
+              <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about">About</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#builds">Latest builds</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#certs">Certs</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End navbar of doom -->
 
-<!--- Intro section ---------------------------------------------------------->   
+    <!--- Intro section ---------------------------------------------------------->
     <div class="intro-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1 class="text animated bounceIn"><span id="brand">unicorn</span>clouds</h1>
-                        <hr class="intro-divider">						
-                        <h3>something snarky goes here</h3>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="intro-message">
+              <h1 class="text animated bounceIn">
+                <span id="brand">unicorn</span>clouds</h1>
+              <hr class="intro-divider">
+              <h3>just keep shipping</h3>
             </div>
+          </div>
         </div>
-    </div> <!-- End intro section -->
+      </div>
+    </div>
+    <!-- End intro section -->
 
-<!--- About section ---------------------------------------------------------->   
-   <a  name="about"></a>
+    <!--- About section ---------------------------------------------------------->
+    <a name="about"></a>
     <div class="content-section-a">
-        <div class="container">
-            <div class="row">
-                <div class="pad1 col-md-6 col-sm-12">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">About <a href="https://twitter.com/jkordish" target="_blank"><img class="icon" src="https://avatars.githubusercontent.com/u/30608?v=3"></h2></a>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et suscipit elit, 
-					vel interdum sapien. Vestibulum dui dolor, porta id ipsum eget, dapibus tempus metus. Suspendisse 
-					dapibus tempor quam vitae luctus. Praesent ultricies posuere augue, sit amet porttitor nisi suscipit 
-					a. Proin non rutrum dolor. Vestibulum ultrices augue mi, blandit egestas arcu tincidunt posuere. Cras 
-					imperdiet ut orci eu faucibus. Nam sed malesuada lectus. 
-					<br /><br />
-					Duis vulputate, ipsum sit amet tempor convallis, 
-					justo erat tempor est, a egestas velit erat sed turpis. Pellentesque habitant morbi tristique senectus 
-					et netus et malesuada fames ac turpis egestas. amet fermentum urna, pellentesque aliquet lectus.</p>
-                </div> <!-- End about blurb -->
-<!--- Skills diagram section ----->   
-                <div class="col-md-6 col-md-offset-0 col-sm-11 col-sm-offset-1 visible-lg visible-md visible-sm"> <!-- Hide on extra small devices -->
-					<div id="content-skills">
-						</div>	
-						<div id="diagram"></div> <!-- Fun skills diagram pipes in here -->	
-					</div>
-                </div> 
+      <div class="container">
+        <div class="row">
+          <div class="pad1 col-md-6 col-sm-12">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">About
+              <a href="https://twitter.com/jkordish" target="_blank">
+                <img class="icon" src="https://avatars.githubusercontent.com/u/30608?v=3">
+            </h2>
+            </a>
+            <p class="lead">devops, software generalist, open source evangelist, yak shaver, recovering infosec professional, and aspiring turtle farmer
+              <br />
+              <br />Primarily interested in the automation and orchestration of systems.
+              <br />
+              <br /> I do Cloud Ops <a href="https://twitter.com/fireeye">@FireEye</a></p>
+          </div>
+          <!-- End about blurb -->
+          <!--- Skills diagram section ----->
+          <div class="col-md-6 col-md-offset-0 col-sm-11 col-sm-offset-1 visible-lg visible-md visible-sm">
+            <!-- Hide on extra small devices -->
+            <div id="content-skills">
             </div>
+            <div id="diagram"></div>
+            <!-- Fun skills diagram pipes in here -->
+          </div>
         </div>
-    </div> <!-- End about section -->
-	
-<!--- Latest builds section ------------------------------------------------------->  	
-   <a  name="builds"></a>
+      </div>
+    </div>
+    </div>
+    <!-- End about section -->
+
+    <!--- Latest builds section ------------------------------------------------------->
+    <a name="builds"></a>
     <div class="pad content-section-c">
-        <div class="container">
+      <div class="container">
+        <div class="row">
+          <center>
+            <h1>Latest Commits</h1>
+            <hr class="spacer">
+            <!--- Start latest project display ----->
             <div class="row">
-                  <center><h1>Latest Commits</h1>
-					<hr class="spacer">							
-<!--- Start latest project display ----->              
-	<div class="row">
-	<!-- run angular controller --->
-		<div ng-controller="reposController">
-				<div class="col-lg-3 col-sm-6" ng-repeat="x in ids"> <!--- repeat this column every time there is a new id in the data -->
-				    <h3><span class="fa-stack fa-lg">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-angle-double-down fa-stack-1x fa-inverse"></i>
-						</span>
-						<br />{{ x.name }}
-					</h3>
-					<p>{{ x.description }} <strong><a href="{{ x.html_url }}" target="_blank"><i class="fa fa-code"></i></a></strong></p>
-				  </div>	<!-- end of repeating column -->	
-				</div> </center><!-- End project list / ng repeat -->
-              </div> 
-            </div>
+              <!-- run angular controller --->
+              <div ng-controller="reposController">
+                <div class="col-lg-3 col-sm-6" ng-repeat="x in ids">
+                  <!--- repeat this column every time there is a new id in the data -->
+                  <h3>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-angle-double-down fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <br />{{ x.name }}
+                  </h3>
+                  <p>{{ x.description }}
+                    <strong><a href="{{ x.html_url }}" target="_blank"><i class="fa fa-code"></i></a></strong>
+                  </p>
+                </div>
+                <!-- end of repeating column -->
+              </div>
+          </center>
+          <!-- End project list / ng repeat -->
+          </div>
         </div>
-    </div> <!-- End latest builds section -->
-	
-<!--- Education section ---------------------------------------------------------->
-   <a  name="certs"></a>		
+      </div>
+    </div>
+    <!-- End latest builds section -->
+
+    <!--- Education section ---------------------------------------------------------->
+    <a name="certs"></a>
     <div class="content-section-b">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-push-6  col-sm-6"> <!-- Push top on mobile, push right on large view -->
-					<div class="clearfix"></div>
-                    <h2 class="section-heading">Education and <br />Certifications</h2>
-                    <p class="lead">Duis vulputate, ipsum sit amet tempor convallis, justo erat tempor est, a egestas velit erat sed turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. amet fermentum urna, pellentesque aliquet lectus. <a href="#">Link to something</a></p>
-                </div> <!-- End cert blurb -->
-<!--- Cert list  ----------------------------------------------------------------->				
-                <div class="col-lg-5 col-lg-offset-2 col-sm-pull-6  col-sm-6">
-					<hr class="section-spacer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-sm-push-6  col-sm-6">
+            <!-- Push top on mobile, push right on large view -->
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Education and
+              <br />Certifications</h2>
+            <p class="lead">Bachelor of Science (BS), Psychology
+              <br />GPA 4.0 <i>Summa Cum Laude</i>
+              <br />
+              <br /><a href="http://www.capella.edu/online-degrees/bachelors-general-psychology/">Capella University</a></p>
+          </div>
+          <!-- End cert blurb -->
+          <!--- Cert list  ----------------------------------------------------------------->
+          <div class="col-lg-5 col-lg-offset-2 col-sm-pull-6  col-sm-6">
+            <hr class="section-spacer">
 
-					<h4><span id="brand"><i class="fa fa-certificate"></i></span>Blah blah blah blhhfuehiuehhuiefhuifehuhs<br /></h4>
-					<h4><span id="brand"><i class="fa fa-certificate"></i></span>Certification X<br /></h4>
-					<h4><span id="brand"><i class="fa fa-certificate"></i></span>Certification X<br /></h4>
-					<h4><span id="brand"><i class="fa fa-certificate"></i></span>Certification X<br /></h4>
-					<h4><span id="brand"><i class="fa fa-certificate"></i></span>Certification X<br /></h4>
-					<h4><span id="brand"><i class="fa fa-certificate"></i></span>Certification X<br /></h4>
-					<h4><span id="brand"><i class="fa fa-certificate"></i></span>Certification X<br /></h4>
-					
-                </div> <!-- End cert list -->
-            </div>
+            <h4>
+              <span id="brand"><i class="fa fa-certificate"></i></span>CISSP
+              <br />
+            </h4>
+            <h4>
+              <span id="brand"><i class="fa fa-certificate"></i></span>Ethical Hacking and Countermeasures (CEHv6)
+              <br />
+            </h4>
+            <h4>
+              <span id="brand"><i class="fa fa-certificate"></i></span>Red Hat Certified System Administrator (RHCSA)
+              <br />
+            </h4>
+            <h4>
+              <span id="brand"><i class="fa fa-certificate"></i></span>Linux Professional Institute Certification (LPIC1)
+              <br />
+            </h4>
+            <h4>
+              <span id="brand"><i class="fa fa-certificate"></i></span>CompTIA: Security+
+              <br />
+            </h4>
+            <h4>
+              <span id="brand"><i class="fa fa-certificate"></i></span>CompTIA: Network+
+              <br />
+            </h4>
+            <h4>
+              <span id="brand"><i class="fa fa-certificate"></i></span>VMware Certified Professional 3/4/5
+              <br />
+            </h4>
+            <h4>
+              <span id="brand"><i class="fa fa-certificate"></i></span>ITIL V3 Foundation
+              <br />
+            </h4>
+            <h4>
+              <span id="brand"><i class="fa fa-certificate"></i></span>Cisco Certified Network Associate (CCNA)
+              <br />
+            </h4>
+            <h4>
+              <span id="brand"><i class="fa fa-certificate"></i></span>MCTS: Windows Server 2008 Active Directory
+              <br />
+            </h4>
+
+          </div>
+          <!-- End cert list -->
         </div>
-    </div> <!-- End Education section -->
+      </div>
+    </div>
+    <!-- End Education section -->
 
-<!--- Contact banner ------------------------------------------------------------->
-   <a name="contact"></a>
+    <!--- Contact banner ------------------------------------------------------------->
+    <a name="contact"></a>
     <div class="banner">
-       <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Connect</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-					    <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Connect</h2>
+          </div>
+          <div class="col-lg-6">
+            <ul class="list-inline banner-social-buttons">
+              <li>
+                <a href="https://github.com/jkordish" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/jkordish" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/jkordish" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>  <!-- End 'Contact' banner -->
+      </div>
+    </div>
+    <!-- End 'Contact' banner -->
 
-<!--- Footer ------------------------------------------------------------------->
+    <!--- Footer ------------------------------------------------------------------->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
 
-                    <p class="copyright text-muted small">Copyright &copy; unicornclouds <span id="year"></span>. All Rights Reserved.<br />Page built by <a href="http://jlmorelli.github.io/">JLM<i class="fa fa-heart-o"></i></a></p>
-                </div>
-            </div>
+            <p class="copyright text-muted small">Copyright &copy; unicornclouds
+              <span id="year"></span>. All Rights Reserved.
+              <br />Page built by <a href="http://jlmorelli.github.io/">JLM<i class="fa fa-heart-o"></i></a></p>
+          </div>
         </div>
+      </div>
     </footer>
 
-<!--- General page scripts ------------------------------------------------------>	
+    <!--- General page scripts ------------------------------------------------------>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-	<script src="js/page-functions.js"></script>
-	
-<!--- SKILLS DIAGRAM ------------------------------------------------------------>	
-	<script src="js/raphael.js" type="text/javascript"></script>
-	<script src="js/init.js" type="text/javascript"></script>
+    <script src="js/page-functions.js"></script>
 
-		<div class="get">
-			<div class="arc">
-				<span class="text">JavaScript</span>
-				<input type="hidden" class="percent" value="95" />
-				<input type="hidden" class="color" value="#97BE0D" />
-			</div>
-			<div class="arc">
-				<span class="text">CSS3</span>
-				<input type="hidden" class="percent" value="90" />
-				<input type="hidden" class="color" value="#D84F5F" />
-			</div>
-			<div class="arc">
-				<span class="text">HTML5</span>
-				<input type="hidden" class="percent" value="80" />
-				<input type="hidden" class="color" value="#88B8E6" />
-			</div>
-			<div class="arc">
-				<span class="text">PHP</span>
-				<input type="hidden" class="percent" value="53" />
-				<input type="hidden" class="color" value="#BEDBE9" />
-			</div>
-			<div class="arc">
-				<span class="text">MySQL</span>
-				<input type="hidden" class="percent" value="45" />
-				<input type="hidden" class="color" value="#EDEBEE" />
-			</div>
-			<div class="arc">
-				<span class="text">JavaScript</span>
-				<input type="hidden" class="percent" value="95" />
-				<input type="hidden" class="color" value="#97BE0D" />
-			</div>
-			<div class="arc">
-				<span class="text">CSS3</span>
-				<input type="hidden" class="percent" value="90" />
-				<input type="hidden" class="color" value="#D84F5F" />
-			</div>
-			<div class="arc">
-				<span class="text">HTML5</span>
-				<input type="hidden" class="percent" value="80" />
-				<input type="hidden" class="color" value="#88B8E6" />
-			</div>
-			<div class="arc">
-				<span class="text">PHP</span>
-				<input type="hidden" class="percent" value="53" />
-				<input type="hidden" class="color" value="#BEDBE9" />
-			</div>
-			<div class="arc">
-				<span class="text">MySQL</span>
-				<input type="hidden" class="percent" value="45" />
-				<input type="hidden" class="color" value="#EDEBEE" />
-			</div>			
-		</div>	 
-</body>
+    <!--- SKILLS DIAGRAM ------------------------------------------------------------>
+    <script src="js/raphael.js" type="text/javascript"></script>
+    <script src="js/init.js" type="text/javascript"></script>
+
+    <div class="get">
+      <div class="arc">
+        <span class="text">Automation</span>
+        <input type="hidden" class="percent" value="95" />
+        <input type="hidden" class="color" value="#97BE0D" />
+      </div>
+      <div class="arc">
+        <span class="text">AWS</span>
+        <input type="hidden" class="percent" value="90" />
+        <input type="hidden" class="color" value="#D84F5F" />
+      </div>
+      <div class="arc">
+        <span class="text">Python</span>
+        <input type="hidden" class="percent" value="50" />
+        <input type="hidden" class="color" value="#88B8E6" />
+      </div>
+      <div class="arc">
+        <span class="text">Rust</span>
+        <input type="hidden" class="percent" value="30" />
+        <input type="hidden" class="color" value="#BEDBE9" />
+      </div>
+      <div class="arc">
+        <span class="text">NodeJS</span>
+        <input type="hidden" class="percent" value="45" />
+        <input type="hidden" class="color" value="#EDEBEE" />
+      </div>
+      <div class="arc">
+        <span class="text">CI/CD</span>
+        <input type="hidden" class="percent" value="90" />
+        <input type="hidden" class="color" value="#97BE0D" />
+      </div>
+      <div class="arc">
+        <span class="text">Packaging</span>
+        <input type="hidden" class="percent" value="95" />
+        <input type="hidden" class="color" value="#97BE0D" />
+      </div>
+      <div class="arc">
+        <span class="text">Networking</span>
+        <input type="hidden" class="percent" value="80" />
+        <input type="hidden" class="color" value="#88B8E6" />
+      </div>
+      <div class="arc">
+        <span class="text">InfoSec</span>
+        <input type="hidden" class="percent" value="80" />
+        <input type="hidden" class="color" value="#BEDBE9" />
+      </div>
+      <div class="arc">
+        <span class="text">OpenStack</span>
+        <input type="hidden" class="percent" value="45" />
+        <input type="hidden" class="color" value="#EDEBEE" />
+      </div>
+      <div class="arc">
+        <span class="text">ETL</span>
+        <input type="hidden" class="percent" value="60" />
+        <input type="hidden" class="color" value="#EDEBEE" />
+      </div>
+      <div class="arc">
+        <span class="text">Infrastructure</span>
+        <input type="hidden" class="percent" value="80" />
+        <input type="hidden" class="color" value="#EDEBEE" />
+      </div>
+    </div>
+  </body>
 
 </html>
