@@ -24,7 +24,13 @@ body, h1, h2, h3, h4, h5, h6 {
   background: url(https://images.unsplash.com/photo-1444090695923-48e08781a76a?q=80&fm=jpg&s=b13e167741e30e229f636a36e0ad45d5) no-repeat center center fixed;
   background-size: cover;
   padding: 100px 0;
+
+/* Added for testing on mobile*/
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
+
 .intro-message {
   position: relative;
   padding-top: 20%;
