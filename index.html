@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+ <!-- new line may fix some rendering issues on mobile view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -95,21 +98,21 @@
       <div class="container">
         <div class="row">
           <div class="pad1 col-md-6 col-sm-12">
-            <hr class="section-heading-spacer">
+            <hr class="section-heading-spacer visible-lg visible-md visible-sm">
             <div class="clearfix"></div>
             <h2 class="section-heading">About
               <a href="https://twitter.com/jkordish" target="_blank">
                 <img class="icon" src="https://avatars.githubusercontent.com/u/30608?v=3">
             </h2>
             </a>
-            <p class="lead">devops, software generalist, open source evangelist, yak shaver, recovering infosec professional, and aspiring turtle farmer
+            <p class="lead">DevOps, software generalist, open source evangelist, yak shaver, recovering infosec professional, and aspiring turtle farmer.
               <br />
               <br />Primarily interested in the automation and orchestration of systems.
               <br />
               <br /> I do Cloud Ops <a href="https://twitter.com/fireeye">@FireEye</a></p>
           </div>
           <!-- End about blurb -->
-          <!--- Skills diagram section ----->
+          <!--- Skills diagram section ---->
           <div class="col-md-6 col-md-offset-0 col-sm-11 col-sm-offset-1 visible-lg visible-md visible-sm">
             <!-- Hide on extra small devices -->
             <div id="content-skills">
@@ -123,7 +126,7 @@
     </div>
     <!-- End about section -->
 
-    <!--- Latest builds section ------------------------------------------------------->
+    <!--- Latest builds section ------------------------------------------------------>
     <a name="builds"></a>
     <div class="pad content-section-c">
       <div class="container">
@@ -131,9 +134,9 @@
           <center>
             <h1>Latest Commits</h1>
             <hr class="spacer">
-            <!--- Start latest project display ----->
+            <!--- Start latest project display ---->
             <div class="row">
-              <!-- run angular controller --->
+              <!-- run angular controller -->
               <div ng-controller="reposController">
                 <div class="col-lg-3 col-sm-6" ng-repeat="x in ids">
                   <!--- repeat this column every time there is a new id in the data -->
@@ -144,7 +147,7 @@
                     </span>
                     <br />{{ x.name }}
                   </h3>
-                  <p>{{ x.description }}
+                  <p>{{x.description | limitTo: 65}}{{x.description.length > 65 ? ' ...' : ''}}
                     <strong><a href="{{ x.html_url }}" target="_blank"><i class="fa fa-code"></i></a></strong>
                   </p>
                 </div>
@@ -165,21 +168,19 @@
         <div class="row">
           <div class="col-lg-5 col-sm-push-6  col-sm-6">
             <!-- Push top on mobile, push right on large view -->
-            <div class="clearfix"></div>
-            <h2 class="section-heading">Education and
-              <br />Certifications</h2>
-            <p class="lead">Bachelor of Science (BS), Psychology
-              <br />GPA 4.0 <i>Summa Cum Laude</i>
-              <br /><a href="http://www.capella.edu/online-degrees/bachelors-general-psychology/">Capella University</a></p>
-            <p class="lead">Master of Science (MS), Information Assurance & Security
-              <br />Targted graduation is late 2016.
-              <br /><a href="http://www.capella.edu/online-degrees/masters-network-defense/">Capella University</a></p>
+           <div class="clearfix"></div> 
+            <h2 class="section-heading">Education <br />& Certifications</h2>
+             <p class="lead"><strong>Master of Science (MS), Information Assurance & Security</strong>
+              <br />Capella University, expected late 2016. <a target="_blank" href="http://www.capella.edu/online-degrees/masters-network-defense/"><i class="fa fa-chevron-circle-right"></i></a></p>
+
+            <p class="lead"><strong>Bachelor of Science (BS), Psychology</strong>
+              <br />Capella University, 2015. GPA: 4.0. <i>Summa Cum Laude.</i>
+               <a target="_blank" href="http://www.capella.edu/online-degrees/bachelors-general-psychology/"><i class="fa fa-chevron-circle-right"></i></a>
+             </p>
           </div>
           <!-- End cert blurb -->
-          <!--- Cert list  ----------------------------------------------------------------->
+          <!--- Cert list  -------------------------------------------------------------->
           <div class="col-lg-5 col-lg-offset-2 col-sm-pull-6  col-sm-6">
-            <hr class="section-spacer">
-
             <h4>
               <span id="brand"><i class="fa fa-certificate"></i></span>CISSP
               <br />
@@ -220,7 +221,6 @@
               <span id="brand"><i class="fa fa-certificate"></i></span>MCTS: Windows Server 2008 Active Directory
               <br />
             </h4>
-
           </div>
           <!-- End cert list -->
         </div>
@@ -228,7 +228,7 @@
     </div>
     <!-- End Education section -->
 
-    <!--- Contact banner ------------------------------------------------------------->
+    <!--- Contact banner ---------------------------------------------------------->
     <a name="contact"></a>
     <div class="banner">
       <div class="container">
@@ -254,15 +254,14 @@
     </div>
     <!-- End 'Contact' banner -->
 
-    <!--- Footer ------------------------------------------------------------------->
+    <!--- Footer ------------------------------------------------------------------>
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
 
             <p class="copyright text-muted small">Copyright &copy; unicornclouds
-              <span id="year"></span>. All Rights Reserved.
-              <br />Page built by <a href="http://jlmorelli.github.io/">JLM<i class="fa fa-heart-o"></i></a></p>
+              <span id="year"></span>. All Rights Reserved. <br />Built with <i class="fa fa-heart"></i> by <a href="http://jlmorelli.github.io/"> jlm</a>
           </div>
         </div>
       </div>

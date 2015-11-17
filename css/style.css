@@ -112,6 +112,7 @@ body, h1, h2, h3, h4, h5, h6 {
   width: 200px;
   border-top: 3px solid #e7e7e7;
 }
+
 .spacer {
   width: 200px;
   border-top: 3px solid #e7e7e7;
@@ -285,3 +286,10 @@ p.copyright {
     background: #4E5D6C;
   }
 }
+
+.edu_row {
+  background-color: #e7e7e7;
+  padding-top:3%;
+  padding-bottom:0.1%;
+}
+

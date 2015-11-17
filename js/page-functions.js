@@ -32,6 +32,8 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+
+/*
 // Google Maps Scripts
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
@@ -179,3 +181,4 @@ function init() {
         icon: image
     });
 }
+*/
